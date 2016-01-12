@@ -1,0 +1,1182 @@
+<!doctype html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <title>Hypnos - Documentation</title>
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- Mobile Internet Explorer allows us to activate ClearType technology for smoothing fonts for easy reading -->
+    <meta http-equiv="cleartype" content="on">
+
+    <!-- Le styles -->
+    <link href="css/bootswatch/Cosmo/bootstrap.min.css" rel="stylesheet">
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/themes/black-tie/jquery-ui.css" rel="stylesheet">
+    <link href="css/jquery.tocify.css" rel="stylesheet">
+    <link href="css/prettify.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/rainbow/themes/zenburnesque.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/rainbowlines/theme.css" media="screen" />
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link href="../assets/ico/favicon.ico" rel="shortcut icon">
+    <link href="../assets/ico/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144">
+    <link href="../assets/ico/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114">
+    <link href="../assets/ico/apple-touch-icon-72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72">
+    <link href="../assets/ico/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon-precomposed">
+  </head>
+
+  <body>
+   
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom:120px;">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="http://www.wowthemes.net/premium-themes-templates/"><img src="img/logo.png"></a>
+  </div>
+  
+  <div class="text-center" style="font-size: 24px;line-height: 73px;">
+  Hypnos - Theme Documentation
+  </div>
+
+</nav>
+     
+
+    <div class="container-fluid" style="margin-top:50px;">
+      <div class="row">
+        <div class="tocify col-sm-3 col-md-3">
+          <div id="toc">
+          </div><!--/.well -->
+        </div><!--/span-->
+        <div class="col-sm-9 col-md-9">
+          <div class="jumbotron">
+            <h1>Hypnos</h1>
+
+             <p>Report bugs, discuss features or ask for support here:</p>        
+            
+            </p>
+            <p><a class="btn btn-primary btn-lg" href="http://www.wowthemes.net/support/" target="_blank">Item Support »</a></p>
+          </div>
+          <h2>Requirements</h2>
+          <br>
+          <p class="well">
+         No special requirements.
+          </p>
+          <br>
+          <h2>Optional Dependencies</h2>
+          <br>
+          <p class="well">
+          You may find Notepad++ useful to edit your template code (CSS, HTML, JAVA or PHP code).
+          </p>
+          <br>
+          <h2>Basic Structure</h2><br/>
+          <div class="highlight"><pre><code class="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"X-UA-Compatible"</span> <span class="na">content=</span><span class="s">"IE=edge"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Hypnos<span class="nt">&lt;/title&gt;</span>
+
+	<span class="c">&lt;!-- Bootstrap Core --&gt;</span>
+	<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"css/bootstrap.min.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+
+	<span class="c">&lt;!-- Font Awesome --&gt;</span>
+	<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"css/font-awesome.min.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+
+	<span class="c">&lt;!-- Animate --&gt;</span>
+	<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"css/animate.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+
+	<span class="c">&lt;!-- Custom Style for this Template --&gt;</span>
+	<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"css/style.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+	
+	<span class="c">&lt;!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries --&gt;</span>
+	<span class="c">&lt;!-- WARNING: Respond.js doesn't work if you view the page via file:// --&gt;</span>
+	<span class="c">&lt;!--[if lt IE 9]&gt;</span>
+	<span class="c">&lt;script src="js/html5shiv.js"&gt;&lt;/script&gt;</span>
+	<span class="c">&lt;script src="js/respond.min.js"&gt;&lt;/script&gt;</span>
+	<span class="c">&lt;![endif]--&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+  
+    <span class="nt">&lt;h1&gt;</span>Hello, world!<span class="nt">&lt;/h1&gt;</span>
+
+	<span class="c">&lt;!-- Javascript Files --&gt;</span>
+	<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"js/jquery.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>	
+	<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"js/bootstrap.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+	<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"js/nicescroll.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+	<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"js/jquery.easing.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+	<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"js/flexslider.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+	<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"js/wow.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+	<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"js/validate.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+	<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"js/common.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>
+          <br>
+		 
+          <h2>Containers</h2>
+		   <br>
+		   <p class="well">
+		   Easily center a page's contents by wrapping its contents in a .container. Containers set width at various media query breakpoints to match the grid system.
+		   </p>
+		   <div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+		   
+		   
+          <h2>Grid System</h2>
+          <br>
+          <p class="well">
+          Grid systems are used for creating page layouts through a series of rows and columns that house your content.
+		  <br/>
+		  Using a single set of .col-md-* grid classes, you can create a basic grid system that starts out stacked on mobile devices and tablet devices (the extra small to small range) before becoming horizontal on desktop (medium) devices. Place grid columns in any .row.
+          </p>
+		  
+		  <div class="bs-docs-grid">
+    <div class="row show-grid">
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+    </div>
+    <div class="row show-grid">
+      <div class="col-md-8">.col-md-8</div>
+      <div class="col-md-4">.col-md-4</div>
+    </div>
+    <div class="row show-grid">
+      <div class="col-md-4">.col-md-4</div>
+      <div class="col-md-4">.col-md-4</div>
+      <div class="col-md-4">.col-md-4</div>
+    </div>
+    <div class="row show-grid">
+      <div class="col-md-6">.col-md-6</div>
+      <div class="col-md-6">.col-md-6</div>
+    </div>
+  </div>
+          <br>
+		  
+		  <div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-1"</span><span class="nt">&gt;</span>.col-md-1<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-1"</span><span class="nt">&gt;</span>.col-md-1<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-1"</span><span class="nt">&gt;</span>.col-md-1<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-1"</span><span class="nt">&gt;</span>.col-md-1<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-1"</span><span class="nt">&gt;</span>.col-md-1<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-1"</span><span class="nt">&gt;</span>.col-md-1<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-1"</span><span class="nt">&gt;</span>.col-md-1<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-1"</span><span class="nt">&gt;</span>.col-md-1<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-1"</span><span class="nt">&gt;</span>.col-md-1<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-1"</span><span class="nt">&gt;</span>.col-md-1<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-1"</span><span class="nt">&gt;</span>.col-md-1<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-1"</span><span class="nt">&gt;</span>.col-md-1<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-8"</span><span class="nt">&gt;</span>.col-md-8<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4"</span><span class="nt">&gt;</span>.col-md-4<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4"</span><span class="nt">&gt;</span>.col-md-4<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4"</span><span class="nt">&gt;</span>.col-md-4<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4"</span><span class="nt">&gt;</span>.col-md-4<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-6"</span><span class="nt">&gt;</span>.col-md-6<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-6"</span><span class="nt">&gt;</span>.col-md-6<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div><br/>
+
+<h2>Menu & Sections</h2>
+<br/><b>MENU STRUCTURE EXAMPLE:</b><br/>
+<div class="highlight">
+<pre>
+&lt;div class=&quot;collapse navbar-collapse&quot;&gt;
+&lt;ul class=&quot;nav navbar-nav pull-right&quot;&gt;
+	&lt;li class=&quot;page-scroll&quot;&gt;&lt;a href=&quot;#home-slider&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+	&lt;li class=&quot;page-scroll&quot;&gt;&lt;a href=&quot;#about&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+	&lt;li class=&quot;page-scroll&quot;&gt;&lt;a href=&quot;#services&quot;&gt;Services&lt;/a&gt;&lt;/li&gt;
+	&lt;li class=&quot;page-scroll&quot;&gt;&lt;a href=&quot;#team&quot;&gt;Team&lt;/a&gt;&lt;/li&gt;
+	&lt;li class=&quot;page-scroll&quot;&gt;&lt;a href=&quot;#portfolio&quot;&gt;Portfolio&lt;/a&gt;&lt;/li&gt;
+	&lt;li class=&quot;page-scroll&quot;&gt;&lt;a href=&quot;#clients-slider&quot;&gt;Clients&lt;/a&gt;&lt;/li&gt;
+	&lt;li class=&quot;page-scroll&quot;&gt;&lt;a href=&quot;#pricing&quot;&gt;Pricing&lt;/a&gt;&lt;/li&gt;
+	&lt;li class=&quot;page-scroll&quot;&gt;&lt;a href=&quot;#contact-page&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+</div>
+<p class="well">
+<span class="note">
+This template is a single HTML page, split in sections. Each menu link relates to a section. In example, the "#about" menu link scrolls to "about" id section and so on:
+<pre>&lt;section id=&quot;home-slider&quot;&gt;home slider page here&lt;/section&gt;</pre><br/>
+<pre>&lt;section id=&quot;about&quot;&gt;about page here&lt;/section&gt;</pre><br/>
+<pre>&lt;section id=&quot;services&quot;&gt;services page here&lt;/section&gt;</pre><br/>
+etc.
+</span>
+</p>
+
+<br/><b>MAIN SECTION STRUCTURE EXAMPLE:</b><br/>
+<pre>
+&lt;section id=&quot;about&quot;&gt;
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div class=&quot;starter-template&quot;&gt;
+			&lt;h1&gt;Title here&lt;/h1&gt;
+			&lt;div class=&quot;smallsep&quot;&gt;&lt;/div&gt;
+			&lt;p class=&quot;lead&quot;&gt;Description here&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;col-md-12&quot;&gt;
+				Content here
+			&lt;/div&gt;	
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+</pre>
+
+	<br/>	  
+	<h2>Pages</h2> 
+		  
+	<h3>Home</h3>
+	<p class="well">
+	<span class="note"> The homepage uses flexslider plugin which is called via file: js/common.js:</span>
+	</p>
+<pre style='color:#d1d1d1;background:#000000;'>
+jQuery<span style='color:#d2cd86; '>(</span>document<span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>ready<span style='color:#d2cd86; '>(</span>function <span style='color:#d2cd86; '>(</span>$<span style='color:#d2cd86; '>)</span> <span style='color:#ffffff; background:#dd0000; '>{</span>
+	$<span style='color:#d2cd86; '>(</span><span style='color:#ffffff; background:#dd0000; '>'#home-slider'</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>flexslider<span style='color:#d2cd86; '>(</span><span style='color:#ffffff; background:#dd0000; '>{</span>
+	pauseOnHover<span style='color:#b060b0; '>:</span> false<span style='color:#d2cd86; '>,</span>    
+	slideshow<span style='color:#b060b0; '>:</span> true<span style='color:#d2cd86; '>,</span>                <span style='color:#9999a9; '>//Boolean: Animate slider automatically</span>
+	slideshowSpeed<span style='color:#b060b0; '>:</span> <span style='color:#008c00; '>3000</span><span style='color:#d2cd86; '>,</span>           <span style='color:#9999a9; '>//Integer: Set the speed of the slideshow cycling, in milliseconds</span>
+	animationSpeed<span style='color:#b060b0; '>:</span> <span style='color:#008c00; '>600</span><span style='color:#d2cd86; '>,</span>
+	animation<span style='color:#b060b0; '>:</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>fade</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>,</span>              <span style='color:#9999a9; '>//String: Select your animation type, "fade" or "slide"</span>
+	easing<span style='color:#b060b0; '>:</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>swing</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>,</span>               <span style='color:#9999a9; '>//{NEW} String: Determines the easing method used in jQuery transitions. jQuery easing plugin is supported!</span>
+	direction<span style='color:#b060b0; '>:</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>horizontal</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>,</span>
+	controlNav<span style='color:#b060b0; '>:</span> true<span style='color:#d2cd86; '>,</span>               <span style='color:#9999a9; '>//Boolean: Create navigation for paging control of each clide? Note: Leave true for manualControls usage</span>
+	useCSS<span style='color:#b060b0; '>:</span> true<span style='color:#d2cd86; '>,</span>                   <span style='color:#9999a9; '>//{NEW} Boolean: Slider will use CSS3 transitions if available</span>
+	touch<span style='color:#b060b0; '>:</span> true<span style='color:#d2cd86; '>,</span> 
+	directionNav<span style='color:#b060b0; '>:</span> false
+	<span style='color:#ffffff; background:#dd0000; '>}</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+  <span style='color:#ffffff; background:#dd0000; '>}</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+</pre>
+
+<p class="well">
+<span class="note">Listed below are all of the options available to customize FlexSlider to suite your needs, along with their default values. </span>
+</p>
+<pre style='color:#d1d1d1;background:#000000;'>
+<span style='color:#e34adc; '>namespace:</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>flex-</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>,</span>             <span style='color:#9999a9; '>//{NEW} String: Prefix string attached to the class of every element generated by the plugin</span>
+<span style='color:#e34adc; '>selector:</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>.slides > li</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>,</span>       <span style='color:#9999a9; '>//{NEW} Selector: Must match a simple pattern. '{container} > {slide}' -- Ignore pattern at your own peril</span>
+<span style='color:#e34adc; '>animation:</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>fade</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>,</span>              <span style='color:#9999a9; '>//String: Select your animation type, "fade" or "slide"</span>
+<span style='color:#e34adc; '>easing:</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>swing</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>,</span>               <span style='color:#9999a9; '>//{NEW} String: Determines the easing method used in jQuery transitions. jQuery easing plugin is supported!</span>
+<span style='color:#e34adc; '>direction:</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>horizontal</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>,</span>        <span style='color:#9999a9; '>//String: Select the sliding direction, "horizontal" or "vertical"</span>
+<span style='color:#e34adc; '>reverse:</span> false<span style='color:#d2cd86; '>,</span>                 <span style='color:#9999a9; '>//{NEW} Boolean: Reverse the animation direction</span>
+<span style='color:#e34adc; '>animationLoop:</span> true<span style='color:#d2cd86; '>,</span>             <span style='color:#9999a9; '>//Boolean: Should the animation loop? If false, directionNav will received "disable" classes at either end</span>
+<span style='color:#e34adc; '>smoothHeight:</span> false<span style='color:#d2cd86; '>,</span>            <span style='color:#9999a9; '>//{NEW} Boolean: Allow height of the slider to animate smoothly in horizontal mode  </span>
+<span style='color:#e34adc; '>startAt:</span> <span style='color:#008c00; '>0</span><span style='color:#d2cd86; '>,</span>                     <span style='color:#9999a9; '>//Integer: The slide that the slider should start on. Array notation (0 = first slide)</span>
+<span style='color:#e34adc; '>slideshow:</span> true<span style='color:#d2cd86; '>,</span>                <span style='color:#9999a9; '>//Boolean: Animate slider automatically</span>
+<span style='color:#e34adc; '>slideshowSpeed:</span> <span style='color:#008c00; '>7000</span><span style='color:#d2cd86; '>,</span>           <span style='color:#9999a9; '>//Integer: Set the speed of the slideshow cycling, in milliseconds</span>
+<span style='color:#e34adc; '>animationSpeed:</span> <span style='color:#008c00; '>600</span><span style='color:#d2cd86; '>,</span>            <span style='color:#9999a9; '>//Integer: Set the speed of animations, in milliseconds</span>
+<span style='color:#e34adc; '>initDelay:</span> <span style='color:#008c00; '>0</span><span style='color:#d2cd86; '>,</span>                   <span style='color:#9999a9; '>//{NEW} Integer: Set an initialization delay, in milliseconds</span>
+<span style='color:#e34adc; '>randomize:</span> false<span style='color:#d2cd86; '>,</span>               <span style='color:#9999a9; '>//Boolean: Randomize slide order</span>
+
+<span style='color:#9999a9; '>// Usability features</span>
+<span style='color:#e34adc; '>pauseOnAction:</span> true<span style='color:#d2cd86; '>,</span>            <span style='color:#9999a9; '>//Boolean: Pause the slideshow when interacting with control elements, highly recommended.</span>
+<span style='color:#e34adc; '>pauseOnHover:</span> false<span style='color:#d2cd86; '>,</span>            <span style='color:#9999a9; '>//Boolean: Pause the slideshow when hovering over slider, then resume when no longer hovering</span>
+<span style='color:#e34adc; '>useCSS:</span> true<span style='color:#d2cd86; '>,</span>                   <span style='color:#9999a9; '>//{NEW} Boolean: Slider will use CSS3 transitions if available</span>
+<span style='color:#e34adc; '>touch:</span> true<span style='color:#d2cd86; '>,</span>                    <span style='color:#9999a9; '>//{NEW} Boolean: Allow touch swipe navigation of the slider on touch-enabled devices</span>
+<span style='color:#e34adc; '>video:</span> false<span style='color:#d2cd86; '>,</span>                   <span style='color:#9999a9; '>//{NEW} Boolean: If using video in the slider, will prevent CSS3 3D Transforms to avoid graphical glitches</span>
+
+<span style='color:#9999a9; '>// Primary Controls</span>
+<span style='color:#e34adc; '>controlNav:</span> true<span style='color:#d2cd86; '>,</span>               <span style='color:#9999a9; '>//Boolean: Create navigation for paging control of each clide? Note: Leave true for manualControls usage</span>
+<span style='color:#e34adc; '>directionNav:</span> true<span style='color:#d2cd86; '>,</span>             <span style='color:#9999a9; '>//Boolean: Create navigation for previous/next navigation? (true/false)</span>
+<span style='color:#e34adc; '>prevText:</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>Previous</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>,</span>           <span style='color:#9999a9; '>//String: Set the text for the "previous" directionNav item</span>
+<span style='color:#e34adc; '>nextText:</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>Next</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>,</span>               <span style='color:#9999a9; '>//String: Set the text for the "next" directionNav item</span>
+
+<span style='color:#9999a9; '>// Secondary Navigation</span>
+<span style='color:#e34adc; '>keyboard:</span> true<span style='color:#d2cd86; '>,</span>                 <span style='color:#9999a9; '>//Boolean: Allow slider navigating via keyboard left/right keys</span>
+<span style='color:#e34adc; '>multipleKeyboard:</span> false<span style='color:#d2cd86; '>,</span>        <span style='color:#9999a9; '>//{NEW} Boolean: Allow keyboard navigation to affect multiple sliders. Default behavior cuts out keyboard navigation with more than one slider present.</span>
+<span style='color:#e34adc; '>mousewheel:</span> false<span style='color:#d2cd86; '>,</span>              <span style='color:#9999a9; '>//{UPDATED} Boolean: Requires jquery.mousewheel.js (</span><span style='color:#6070ec; '>https://github.com/brandonaaron/jquery-mousewheel</span><span style='color:#9999a9; '>) - Allows slider navigating via mousewheel</span>
+<span style='color:#e34adc; '>pausePlay:</span> false<span style='color:#d2cd86; '>,</span>               <span style='color:#9999a9; '>//Boolean: Create pause/play dynamic element</span>
+<span style='color:#e34adc; '>pauseText:</span> <span style='color:#ffffff; background:#dd0000; '>'Pause'</span><span style='color:#d2cd86; '>,</span>             <span style='color:#9999a9; '>//String: Set the text for the "pause" pausePlay item</span>
+<span style='color:#e34adc; '>playText:</span> <span style='color:#00c4c4; '>'Play'</span><span style='color:#d2cd86; '>,</span>               <span style='color:#9999a9; '>//String: Set the text for the "play" pausePlay item</span>
+
+<span style='color:#9999a9; '>// Special properties</span>
+<span style='color:#e34adc; '>controlsContainer:</span> <span style='color:#02d045; '>"</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>,</span>          <span style='color:#9999a9; '>//{UPDATED} Selector: USE CLASS SELECTOR. Declare which container the navigation elements should be appended too. Default container is the FlexSlider element. Example use would be ".flexslider-container". Property is ignored if given element is not found.</span>
+<span style='color:#e34adc; '>manualControls:</span> <span style='color:#02d045; '>"</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>,</span>             <span style='color:#9999a9; '>//Selector: Declare custom control navigation. Examples would be ".flex-control-nav li" or "#tabs-nav li img", etc. The number of elements in your controlNav should match the number of slides/tabs.</span>
+<span style='color:#e34adc; '>sync:</span> <span style='color:#02d045; '>"</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>,</span>                       <span style='color:#9999a9; '>//{NEW} Selector: Mirror the actions performed on this slider with another slider. Use with care.</span>
+<span style='color:#e34adc; '>asNavFor:</span> <span style='color:#02d045; '>"</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>,</span>                   <span style='color:#9999a9; '>//{NEW} Selector: Internal property exposed for turning the slider into a thumbnail navigation for another slider</span>
+
+<span style='color:#9999a9; '>// Carousel Options</span>
+<span style='color:#e34adc; '>itemWidth:</span> <span style='color:#008c00; '>0</span><span style='color:#d2cd86; '>,</span>                   <span style='color:#9999a9; '>//{NEW} Integer: Box-model width of individual carousel items, including horizontal borders and padding.</span>
+<span style='color:#e34adc; '>itemMargin:</span> <span style='color:#008c00; '>0</span><span style='color:#d2cd86; '>,</span>                  <span style='color:#9999a9; '>//{NEW} Integer: Margin between carousel items.</span>
+<span style='color:#e34adc; '>minItems:</span> <span style='color:#008c00; '>0</span><span style='color:#d2cd86; '>,</span>                    <span style='color:#9999a9; '>//{NEW} Integer: Minimum number of carousel items that should be visible. Items will resize fluidly when below this.</span>
+<span style='color:#e34adc; '>maxItems:</span> <span style='color:#008c00; '>0</span><span style='color:#d2cd86; '>,</span>                    <span style='color:#9999a9; '>//{NEW} Integer: Maxmimum number of carousel items that should be visible. Items will resize fluidly when above this limit.</span>
+<span style='color:#e34adc; '>move:</span> <span style='color:#008c00; '>0</span><span style='color:#d2cd86; '>,</span>                        <span style='color:#9999a9; '>//{NEW} Integer: Number of carousel items that should move on animation. If 0, slider will move all visible items.</span>
+                                
+<span style='color:#9999a9; '>// Callback API</span>
+<span style='color:#e34adc; '>start:</span> function<span style='color:#d2cd86; '>(</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>{</span><span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>,</span>            <span style='color:#9999a9; '>//Callback: function(slider) - Fires when the slider loads the first slide</span>
+<span style='color:#e34adc; '>before:</span> function<span style='color:#d2cd86; '>(</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>{</span><span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>,</span>           <span style='color:#9999a9; '>//Callback: function(slider) - Fires asynchronously with each slider animation</span>
+<span style='color:#e34adc; '>after:</span> function<span style='color:#d2cd86; '>(</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>{</span><span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>,</span>            <span style='color:#9999a9; '>//Callback: function(slider) - Fires after each slider animation completes</span>
+<span style='color:#e34adc; '>end:</span> function<span style='color:#d2cd86; '>(</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>{</span><span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>,</span>              <span style='color:#9999a9; '>//Callback: function(slider) - Fires when the slider reaches the last slide (asynchronous)</span>
+<span style='color:#e34adc; '>added:</span> function<span style='color:#d2cd86; '>(</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>{</span><span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>,</span>            <span style='color:#9999a9; '>//{NEW} Callback: function(slider) - Fires after a slide is added</span>
+<span style='color:#e34adc; '>removed:</span> function<span style='color:#d2cd86; '>(</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>{</span><span style='color:#b060b0; '>}</span>           <span style='color:#9999a9; '>//{NEW} Callback: function(slider) - Fires after a slide is removed</span>
+</pre>
+
+<p class="well">
+<span class="note">
+Basic homepage structure
+</span>
+</p>
+
+<pre style='color:#d1d1d1;background:#000000;'>
+<span style='color:#d2cd86; '>&lt;</span>section id<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>home-slider</span><span style='color:#02d045; '>"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>flexslider fullbg</span><span style='color:#02d045; '>"</span> style<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>background-image:url(img/intro.jpg); height:600px;padding:0px;</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+	<span style='color:#d2cd86; '>&lt;</span>ul class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>slides</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span>li class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>home-slide</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>flex-caption transparent light-font center</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span>p class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>home-slide-content</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>This is Hypnos<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>p<span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span>p class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>home-slide-content</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>We love it<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>p<span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span>li class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>home-slide</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>flex-caption transparent light-font center</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span>p class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>home-slide-content</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>This is Hypnos<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>p<span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span>p class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>home-slide-content</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>We love it<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>p<span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+	<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>ul<span style='color:#d2cd86; '>></span>
+<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>section<span style='color:#d2cd86; '>></span>
+</pre>
+<br/>	  
+	  
+	  
+	<h3>About Us</h3>
+	<p class="well">
+<span class="note">
+Basic structure
+</span>
+</p>
+
+<pre style='color:#d1d1d1;background:#000000;'>
+<span style='color:#d2cd86; '>&lt;</span>section id<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>about</span><span style='color:#02d045; '>"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>graybg</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+	<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>container</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>starter-template</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span>h1<span style='color:#d2cd86; '>></span>Title<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>h1<span style='color:#d2cd86; '>></span>
+		 <span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>smallsep</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span>p class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>lead</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>Description<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>p<span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span>p<span style='color:#d2cd86; '>></span>Content<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>p<span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span>br<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span>img src<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>img/pathtoimg.png</span><span style='color:#02d045; '>"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>img-responsive pxauto</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+	<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>section<span style='color:#d2cd86; '>></span>
+</pre>
+
+<p class="well"><span class="note">You have the option to remove the gray background, by replacing this line:</span></p>
+<pre style='color:#d1d1d1;background:#000000;'>
+<span style='color:#d2cd86; '>&lt;</span>section id<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>about</span><span style='color:#02d045; '>"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>graybg</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+</pre>
+
+<p class="well"><span class="note">with this one:</span></p>
+
+<pre style='color:#d1d1d1;background:#000000;'>
+<span style='color:#d2cd86; '>&lt;</span>section id<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>about</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+</pre>
+
+<br/> 
+
+	  
+	<h3>Services</h3>
+	<p class="well"><span class="note">Basic structure</span></p>
+
+<pre style='color:#d1d1d1;background:#000000;'>
+<span style='color:#d2cd86; '>&lt;</span>section id<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>services</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+	<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>container</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>starter-template</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span>h1<span style='color:#d2cd86; '>></span>Services<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>h1<span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>smallsep</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span>p class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>lead</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>Some Description<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>p<span style='color:#d2cd86; '>></span>
+			
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>col-md-12</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>boxservice</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span>i class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>fa fa-globe</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>i<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span>h3<span style='color:#d2cd86; '>></span>Web Design<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>h3<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span>p<span style='color:#d2cd86; '>></span>Description<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>p<span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>boxservice</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span>i class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>fa fa-user</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>i<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span>h3<span style='color:#d2cd86; '>></span>User Experience<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>h3<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span>p<span style='color:#d2cd86; '>></span>Description<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>p<span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>boxservice</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span>i class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>fa fa-dashboard</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>i<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span>h3<span style='color:#d2cd86; '>></span>Client Side<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>h3<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span>p<span style='color:#d2cd86; '>></span>Description<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>p<span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>				
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+	<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>section<span style='color:#d2cd86; '>></span>
+</pre>
+
+<p class="well"><span class="note">If you want to add a gray or colored background, replace this line:</span></p>
+<pre style='color:#d1d1d1;background:#000000;'>
+<span style='color:#d2cd86; '>&lt;</span>section id<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>services</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+</pre>
+
+
+<p class="well"><span class="note">with this one:</span></p>
+
+<pre style='color:#d1d1d1;background:#000000;'>
+<span style='color:#d2cd86; '>&lt;</span>section id<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>services</span><span style='color:#02d045; '>"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>graybg</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+</pre>
+
+or 
+
+<pre style='color:#d1d1d1;background:#000000;'>
+<span style='color:#d2cd86; '>&lt;</span>section id<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>services</span><span style='color:#02d045; '>"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>maincolorbg</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+</pre>
+
+<br/> 
+
+
+
+	
+	<h3>Team</h3>
+	<p class="well"><span class="note">Basic structure</span></p>
+<pre style='color:#d1d1d1;background:#000000;'>
+<span style='color:#d2cd86; '>&lt;</span>section id<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>team</span><span style='color:#02d045; '>"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>maincolorbg</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+	<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>container</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+	
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>starter-template</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span>h1<span style='color:#d2cd86; '>></span>Creative Team<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>h1<span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>smallsep</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span>p class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>lead</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>We are Hypnos<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>p<span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+		
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>row</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+		
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>col-md-4</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>thumbnail</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span>img src<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>team1.jpg</span><span style='color:#02d045; '>"</span> alt<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>caption</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>h4<span style='color:#d2cd86; '>></span>Name<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>h4<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>span class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>primarycol</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>position<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>span<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>p<span style='color:#d2cd86; '>></span>Description<span style='color:#d2cd86; '>&lt;</span>br<span style='color:#d2cd86; '>/</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>p<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>ul class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>social-icons</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span>a href<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>#</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span>i class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>fa fa-facebook</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>i<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>a<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span>a href<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>#</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span>i class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>fa fa-twitter</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>i<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>a<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>ul<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+			
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>col-md-4</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>thumbnail</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span>img src<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>team2.jpg</span><span style='color:#02d045; '>"</span> alt<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>caption</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>h4<span style='color:#d2cd86; '>></span>Name<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>h4<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>span class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>primarycol</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>position<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>span<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>p<span style='color:#d2cd86; '>></span>description<span style='color:#d2cd86; '>&lt;</span>br<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>p<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>ul class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>social-icons</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span>a href<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>#</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span>i class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>fa fa-facebook</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>i<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>a<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span>a href<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>#</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span>i class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>fa fa-twitter</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>i<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>a<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>ul<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+			
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>col-md-4</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>thumbnail</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span>img src<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>team3.jpg</span><span style='color:#02d045; '>"</span> alt<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>caption</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>h4<span style='color:#d2cd86; '>></span>Name<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>h4<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>span class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>primarycol</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>position<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>span<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>p<span style='color:#d2cd86; '>></span>description<span style='color:#d2cd86; '>&lt;</span>br<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>p<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>ul class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>social-icons</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span>a href<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>#</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span>i class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>fa fa-facebook</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>i<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>a<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span>a href<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>#</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span>i class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>fa fa-twitter</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>i<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>a<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>ul<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+			
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+		
+	<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>section<span style='color:#d2cd86; '>></span>
+</pre>
+
+<p class="well"><span class="note">If you want to remove the colored background, replace this line:</span></p>
+
+
+<pre style='color:#d1d1d1;background:#000000;'>
+<span style='color:#d2cd86; '>&lt;</span>section id<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>team</span><span style='color:#02d045; '>"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>maincolorbg</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+</pre>
+
+<p class="well"><span class="note">with this one:</span></p>
+
+
+
+<pre style='color:#d1d1d1;background:#000000;'>
+<span style='color:#d2cd86; '>&lt;</span>section id<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>team</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+</pre>
+
+<p class="well"><span class="note">or you can add a gray background:</span></p>
+
+
+
+<pre style='color:#d1d1d1;background:#000000;'>
+<span style='color:#d2cd86; '>&lt;</span>section id<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>team</span><span style='color:#02d045; '>"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>graybg</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+</pre>
+
+<br/>
+
+<h3>Portfolio</h3>
+<p class="well"><span class="note">Basic structure</span></p>
+	
+<pre style='color:#d1d1d1;background:#000000;'>
+<span style='color:#d2cd86; '>&lt;</span>section id<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>portfolio</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+	<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>container</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>starter-template</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span>h1<span style='color:#d2cd86; '>></span>Portfolio<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>h1<span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>smallsep</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span>p class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>lead</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>Some description<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>p<span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>row</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+		
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>col-sm-4 portfolio-item</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span>a href<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>#portfolioModal1</span><span style='color:#02d045; '>"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>portfolio-link</span><span style='color:#02d045; '>"</span> data<span style='color:#d2cd86; '>-</span>toggle<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>modal</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>caption</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>caption-content</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>i class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>fa fa-link fa-2x</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>i<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span>img src<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>imagepath.jpg</span><span style='color:#02d045; '>"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>img-responsive</span><span style='color:#02d045; '>"</span> alt<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>/</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>a<span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+			
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>col-sm-4 portfolio-item</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span>a href<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>#portfolioModal2</span><span style='color:#02d045; '>"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>portfolio-link</span><span style='color:#02d045; '>"</span> data<span style='color:#d2cd86; '>-</span>toggle<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>modal</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>caption</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>caption-content</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>i class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>fa fa-link fa-2x</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>i<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span>img src<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>imagepath.jpg</span><span style='color:#02d045; '>"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>img-responsive</span><span style='color:#02d045; '>"</span> alt<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>/</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>a<span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+			
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>col-sm-4 portfolio-item</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span>a href<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>#portfolioModal3</span><span style='color:#02d045; '>"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>portfolio-link</span><span style='color:#02d045; '>"</span> data<span style='color:#d2cd86; '>-</span>toggle<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>modal</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>caption</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>caption-content</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>i class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>fa fa-link fa-2x</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>i<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span>img src<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>imagepath.jpg</span><span style='color:#02d045; '>"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>img-responsive</span><span style='color:#02d045; '>"</span> alt<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>/</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>a<span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>	
+			
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+	<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>section<span style='color:#d2cd86; '>></span>
+</pre>
+
+
+
+
+<p class="well"><span class="note">Each project item opens in a modal window so you can add a detailed description. Make sure the id corresponds. In the following example, the modal opens for "portfolioModal1" (notice the same id for the first project item listed above): </span></p>
+
+<pre style='color:#d1d1d1;background:#000000;'>
+<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>portfolio-modal modal fade</span><span style='color:#02d045; '>"</span> id<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>portfolioModal1</span><span style='color:#02d045; '>"</span> tabindex<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>-1</span><span style='color:#02d045; '>"</span> role<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>dialog</span><span style='color:#02d045; '>"</span> aria<span style='color:#d2cd86; '>-</span>hidden<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>true</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+	<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>modal-content</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>close-modal</span><span style='color:#02d045; '>"</span> data<span style='color:#d2cd86; '>-</span>dismiss<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>modal</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>lr</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>rl</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>container</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>row</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>col-lg-8 col-lg-offset-2</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>modal-body</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>h2<span style='color:#d2cd86; '>></span>Project Title<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>h2<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>hr class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>star-primary</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>img src<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>imagepath.jpg</span><span style='color:#02d045; '>"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>img-responsive img-centered</span><span style='color:#02d045; '>"</span> alt<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>p<span style='color:#d2cd86; '>></span>
+							<span>This area is used to describe your project.</span>
+						<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>p<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>ul class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>list-inline item-details</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Client<span style='color:#b060b0; '>:</span> <span style='color:#d2cd86; '>&lt;</span>strong<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span>a href<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>#</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>Hypnos<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>a<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>strong<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Date<span style='color:#b060b0; '>:</span> <span style='color:#d2cd86; '>&lt;</span>strong<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span>a href<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>#</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>April <span style='color:#008c00; '>2014</span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>a<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>strong<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Service<span style='color:#b060b0; '>:</span> <span style='color:#d2cd86; '>&lt;</span>strong<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span>a href<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>#</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>Web Development<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>a<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>strong<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>ul<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>button type<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>button</span><span style='color:#02d045; '>"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>btn btn-default</span><span style='color:#02d045; '>"</span> data<span style='color:#d2cd86; '>-</span>dismiss<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>modal</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span>i class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>fa fa-times</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>i<span style='color:#d2cd86; '>></span> Close<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>button<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+	<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+</pre>
+
+<p class="well"><span class="note">The next example opens the 2nd portfolio item in a modal window.: </span></p>
+
+<pre style='color:#d1d1d1;background:#000000;'>
+<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>portfolio-modal modal fade</span><span style='color:#02d045; '>"</span> id<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>portfolioModal2</span><span style='color:#02d045; '>"</span> tabindex<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>-1</span><span style='color:#02d045; '>"</span> role<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>dialog</span><span style='color:#02d045; '>"</span> aria<span style='color:#d2cd86; '>-</span>hidden<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>true</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+	<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>modal-content</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>close-modal</span><span style='color:#02d045; '>"</span> data<span style='color:#d2cd86; '>-</span>dismiss<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>modal</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>lr</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>rl</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>container</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>row</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>col-lg-8 col-lg-offset-2</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>modal-body</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>h2<span style='color:#d2cd86; '>></span>Project Title<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>h2<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>hr class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>star-primary</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>img src<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>imagepath.jpg</span><span style='color:#02d045; '>"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>img-responsive img-centered</span><span style='color:#02d045; '>"</span> alt<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>p<span style='color:#d2cd86; '>></span>
+							 <span>This area is used to describe your project.</span>
+						<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>p<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>ul class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>list-inline item-details</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Client<span style='color:#b060b0; '>:</span> <span style='color:#d2cd86; '>&lt;</span>strong<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span>a href<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>#</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>Hypnos<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>a<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>strong<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Date<span style='color:#b060b0; '>:</span> <span style='color:#d2cd86; '>&lt;</span>strong<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span>a href<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>#</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>April <span style='color:#008c00; '>2014</span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>a<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>strong<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Service<span style='color:#b060b0; '>:</span> <span style='color:#d2cd86; '>&lt;</span>strong<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span>a href<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>#</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>Web Development<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>a<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>strong<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>ul<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>button type<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>button</span><span style='color:#02d045; '>"</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>btn btn-default</span><span style='color:#02d045; '>"</span> data<span style='color:#d2cd86; '>-</span>dismiss<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>modal</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span>i class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>fa fa-times</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>i<span style='color:#d2cd86; '>></span> Close<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>button<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+	<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+</pre>
+
+
+
+	<br/>
+	
+	<h3>Clients (Testimonials)</h3>
+	<p class="well"><span class="note">Basic structure</span></p>
+	
+<pre style='color:#d1d1d1;background:#000000;'>
+<span style='color:#d2cd86; '>&lt;</span>section class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>testimonial graybg</span><span style='color:#02d045; '>"</span> id<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>clients-slider</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+ <span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>container</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+  <span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>row</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+	<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>c12</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span>ul class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>slides</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>
+			  <span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>slide-text</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>					
+			  <span style='color:#d2cd86; '>&lt;</span>h2<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span>span class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>uppercase</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>Some Title<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>span<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>h2<span style='color:#d2cd86; '>></span>
+			  <span style='color:#d2cd86; '>&lt;</span>img src<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>image.png</span><span style='color:#02d045; '>"</span> alt<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+			  <span style='color:#d2cd86; '>&lt;</span>p<span style='color:#d2cd86; '>></span>Description<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>p<span style='color:#d2cd86; '>></span>				
+			  <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+				
+
+			<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>
+			  <span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>slide-text</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>					
+			  <span style='color:#d2cd86; '>&lt;</span>h2<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span>span class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>uppercase</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>Title<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>span<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>h2<span style='color:#d2cd86; '>></span>
+			  <span style='color:#d2cd86; '>&lt;</span>img src<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>image.png</span><span style='color:#02d045; '>"</span> alt<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+			  <span style='color:#d2cd86; '>&lt;</span>p<span style='color:#d2cd86; '>></span>Description<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>p<span style='color:#d2cd86; '>></span>				
+			  <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>ul<span style='color:#d2cd86; '>></span>
+	<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+  <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+ <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>section<span style='color:#d2cd86; '>></span>
+</pre>
+
+<p class="well">
+	<span class="note"> The testimonial slider uses flexslider plugin which is called via file: js/common.js:</span>
+	</p>
+</p>
+
+<pre style='color:#d1d1d1;background:#000000;'>
+jQuery<span style='color:#d2cd86; '>(</span>document<span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>ready<span style='color:#d2cd86; '>(</span>function <span style='color:#d2cd86; '>(</span>$<span style='color:#d2cd86; '>)</span> <span style='color:#ffffff; background:#dd0000; '>{</span>
+	$<span style='color:#d2cd86; '>(</span><span style='color:#ffffff; background:#dd0000; '>'.testimonial'</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>.</span>flexslider<span style='color:#d2cd86; '>(</span><span style='color:#ffffff; background:#dd0000; '>{</span>
+	pauseOnHover<span style='color:#b060b0; '>:</span> true<span style='color:#d2cd86; '>,</span>    
+	slideshow<span style='color:#b060b0; '>:</span> false<span style='color:#d2cd86; '>,</span>                <span style='color:#9999a9; '>//Boolean: Animate slider automatically</span>
+	slideshowSpeed<span style='color:#b060b0; '>:</span> <span style='color:#008c00; '>5000</span><span style='color:#d2cd86; '>,</span>           <span style='color:#9999a9; '>//Integer: Set the speed of the slideshow cycling, in milliseconds</span>
+	animationSpeed<span style='color:#b060b0; '>:</span> <span style='color:#008c00; '>1300</span><span style='color:#d2cd86; '>,</span>
+	animation<span style='color:#b060b0; '>:</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>slide</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>,</span>              <span style='color:#9999a9; '>//String: Select your animation type, "fade" or "slide"</span>
+	easing<span style='color:#b060b0; '>:</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>swing</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>,</span>               <span style='color:#9999a9; '>//{NEW} String: Determines the easing method used in jQuery transitions. jQuery easing plugin is supported!</span>
+	direction<span style='color:#b060b0; '>:</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>horizontal</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>,</span>
+	controlNav<span style='color:#b060b0; '>:</span> true<span style='color:#d2cd86; '>,</span>               <span style='color:#9999a9; '>//Boolean: Create navigation for paging control of each clide? Note: Leave true for manualControls usage</span>
+	useCSS<span style='color:#b060b0; '>:</span> true<span style='color:#d2cd86; '>,</span>                   <span style='color:#9999a9; '>//{NEW} Boolean: Slider will use CSS3 transitions if available</span>
+	touch<span style='color:#b060b0; '>:</span> true<span style='color:#d2cd86; '>,</span> 
+	directionNav<span style='color:#b060b0; '>:</span> false
+	<span style='color:#ffffff; background:#dd0000; '>}</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+  <span style='color:#ffffff; background:#dd0000; '>}</span><span style='color:#d2cd86; '>)</span><span style='color:#b060b0; '>;</span>
+</pre>
+
+<br/>
+	<h3>Pricing</h3>
+	
+
+<p class="well">
+	<span class="note"> The code for 4 column pricing boxes:</span>
+</p>
+	
+<pre style='color:#d1d1d1;background:#000000;'>
+<span style='color:#d2cd86; '>&lt;</span>section id<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>pricing</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>container</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+	<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>starter-template</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span>h1<span style='color:#d2cd86; '>></span>Pricing<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>h1<span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>smallsep</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span>p class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>lead</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+			 We are Hypnos
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>p<span style='color:#d2cd86; '>></span>
+	<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+	<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>row pricing</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>col-lg-3</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>whitebox salmonborder wow bounceIn animated</span><span style='color:#02d045; '>"</span> data<span style='color:#d2cd86; '>-</span>wow<span style='color:#d2cd86; '>-</span>delay<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>0.1s</span><span style='color:#02d045; '>"</span> data<span style='color:#d2cd86; '>-</span>wow<span style='color:#d2cd86; '>-</span>duration<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>2s</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>content</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span>p class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>price</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+						 <span style='color:#008c00; '>299</span><span style='color:#d2cd86; '>&lt;</span>sup<span style='color:#d2cd86; '>></span>$<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>sup<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>p<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span>ul<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Shopping Area<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Spacious Rooms <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Close to the Airport<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Heart of the City<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>ul<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span>a class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>btn btn-lg</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span>i class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>fa fa-shopping-cart</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>i<span style='color:#d2cd86; '>></span> Buy Now<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>a<span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>col-lg-3</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>whitebox goldborder wow bounceIn animated</span><span style='color:#02d045; '>"</span> data<span style='color:#d2cd86; '>-</span>wow<span style='color:#d2cd86; '>-</span>delay<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>0.2s</span><span style='color:#02d045; '>"</span> data<span style='color:#d2cd86; '>-</span>wow<span style='color:#d2cd86; '>-</span>duration<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>2s</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>content best-offer</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span>p class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>price</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+						 <span style='color:#008c00; '>479</span><span style='color:#d2cd86; '>&lt;</span>sup<span style='color:#d2cd86; '>></span>$<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>sup<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>p<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span>ul<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Shopping Area<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Spacious Rooms <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Close to the Airport<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Heart of the City<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>ul<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span>a class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>btn btn-lg</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span>i class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>fa fa-user</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>i<span style='color:#d2cd86; '>></span> Sign Up<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>a<span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>col-lg-3</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>whitebox blueborder wow bounceIn animated</span><span style='color:#02d045; '>"</span> data<span style='color:#d2cd86; '>-</span>wow<span style='color:#d2cd86; '>-</span>delay<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>0.3s</span><span style='color:#02d045; '>"</span> data<span style='color:#d2cd86; '>-</span>wow<span style='color:#d2cd86; '>-</span>duration<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>2s</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>content</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span>p class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>price</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+						 <span style='color:#008c00; '>621</span><span style='color:#d2cd86; '>&lt;</span>sup<span style='color:#d2cd86; '>></span>$<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>sup<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>p<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span>ul<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Shopping Area<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Spacious Rooms <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Close to the Airport<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Heart of the City<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>ul<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span>a class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>btn btn-lg</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span>i class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>fa fa-book</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>i<span style='color:#d2cd86; '>></span> Book Now<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>a<span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>col-lg-3</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>whitebox greenborder wow bounceIn animated</span><span style='color:#02d045; '>"</span> data<span style='color:#d2cd86; '>-</span>wow<span style='color:#d2cd86; '>-</span>delay<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>0.4s</span><span style='color:#02d045; '>"</span> data<span style='color:#d2cd86; '>-</span>wow<span style='color:#d2cd86; '>-</span>duration<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>2s</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>content</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span>p class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>price</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+						 <span style='color:#008c00; '>843</span><span style='color:#d2cd86; '>&lt;</span>sup<span style='color:#d2cd86; '>></span>$<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>sup<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>p<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span>ul<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Shopping Area<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Spacious Rooms <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Close to the Airport<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Heart of the City<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>ul<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span>a class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>btn btn-lg</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span>i class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>fa fa-mail-forward</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>i<span style='color:#d2cd86; '>></span> Add to Cart<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>a<span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+	<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>section<span style='color:#d2cd86; '>></span>
+</pre>
+	
+	
+<p class="well">
+	<span class="note"> The code for 3 column pricing boxes:</span>
+</p>	
+	
+	
+<pre style='color:#d1d1d1;background:#000000;'>
+<span style='color:#d2cd86; '>&lt;</span>section id<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>pricing</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>container</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+	<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>starter-template</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span>h1<span style='color:#d2cd86; '>></span>Pricing<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>h1<span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>smallsep</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span>p class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>lead</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+			 We are Hypnos
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>p<span style='color:#d2cd86; '>></span>
+	<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+	<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>row pricing</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>col-lg-4</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>whitebox salmonborder wow bounceIn animated</span><span style='color:#02d045; '>"</span> data<span style='color:#d2cd86; '>-</span>wow<span style='color:#d2cd86; '>-</span>delay<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>0.1s</span><span style='color:#02d045; '>"</span> data<span style='color:#d2cd86; '>-</span>wow<span style='color:#d2cd86; '>-</span>duration<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>2s</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>content</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span>p class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>price</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+						 <span style='color:#008c00; '>299</span><span style='color:#d2cd86; '>&lt;</span>sup<span style='color:#d2cd86; '>></span>$<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>sup<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>p<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span>ul<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Shopping Area<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Spacious Rooms <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Close to the Airport<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Heart of the City<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>ul<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span>a class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>btn btn-lg</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span>i class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>fa fa-shopping-cart</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>i<span style='color:#d2cd86; '>></span> Buy Now<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>a<span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>col-lg-4</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>whitebox goldborder wow bounceIn animated</span><span style='color:#02d045; '>"</span> data<span style='color:#d2cd86; '>-</span>wow<span style='color:#d2cd86; '>-</span>delay<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>0.2s</span><span style='color:#02d045; '>"</span> data<span style='color:#d2cd86; '>-</span>wow<span style='color:#d2cd86; '>-</span>duration<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>2s</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>content best-offer</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span>p class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>price</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+						 <span style='color:#008c00; '>479</span><span style='color:#d2cd86; '>&lt;</span>sup<span style='color:#d2cd86; '>></span>$<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>sup<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>p<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span>ul<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Shopping Area<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Spacious Rooms <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Close to the Airport<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Heart of the City<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>ul<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span>a class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>btn btn-lg</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span>i class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>fa fa-user</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>i<span style='color:#d2cd86; '>></span> Sign Up<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>a<span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>col-lg-4</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>whitebox blueborder wow bounceIn animated</span><span style='color:#02d045; '>"</span> data<span style='color:#d2cd86; '>-</span>wow<span style='color:#d2cd86; '>-</span>delay<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>0.3s</span><span style='color:#02d045; '>"</span> data<span style='color:#d2cd86; '>-</span>wow<span style='color:#d2cd86; '>-</span>duration<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>2s</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>content</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span>p class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>price</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+						 <span style='color:#008c00; '>621</span><span style='color:#d2cd86; '>&lt;</span>sup<span style='color:#d2cd86; '>></span>$<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>sup<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>p<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span>ul<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Shopping Area<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Spacious Rooms <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Close to the Airport<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Heart of the City<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>ul<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span>a class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>btn btn-lg</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span>i class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>fa fa-book</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>i<span style='color:#d2cd86; '>></span> Book Now<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>a<span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>	
+	<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>section<span style='color:#d2cd86; '>></span>
+</pre>
+
+
+
+
+<p class="well">
+	<span class="note"> The code for 2 column pricing boxes:</span>
+</p>
+
+
+<pre style='color:#d1d1d1;background:#000000;'>
+<span style='color:#d2cd86; '>&lt;</span>section id<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>pricing</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>container</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+	<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>starter-template</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span>h1<span style='color:#d2cd86; '>></span>Pricing<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>h1<span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>smallsep</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span>p class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>lead</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+			 We are Hypnos
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>p<span style='color:#d2cd86; '>></span>
+	<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+	<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>row pricing</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>col-lg-6</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>whitebox salmonborder wow bounceIn animated</span><span style='color:#02d045; '>"</span> data<span style='color:#d2cd86; '>-</span>wow<span style='color:#d2cd86; '>-</span>delay<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>0.1s</span><span style='color:#02d045; '>"</span> data<span style='color:#d2cd86; '>-</span>wow<span style='color:#d2cd86; '>-</span>duration<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>2s</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>content</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span>p class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>price</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+						 <span style='color:#008c00; '>299</span><span style='color:#d2cd86; '>&lt;</span>sup<span style='color:#d2cd86; '>></span>$<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>sup<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>p<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span>ul<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Shopping Area<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Spacious Rooms <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Close to the Airport<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Heart of the City<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>ul<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span>a class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>btn btn-lg</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span>i class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>fa fa-shopping-cart</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>i<span style='color:#d2cd86; '>></span> Buy Now<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>a<span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>col-lg-6</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>whitebox goldborder wow bounceIn animated</span><span style='color:#02d045; '>"</span> data<span style='color:#d2cd86; '>-</span>wow<span style='color:#d2cd86; '>-</span>delay<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>0.2s</span><span style='color:#02d045; '>"</span> data<span style='color:#d2cd86; '>-</span>wow<span style='color:#d2cd86; '>-</span>duration<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>2s</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>content best-offer</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span>p class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>price</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+						 <span style='color:#008c00; '>479</span><span style='color:#d2cd86; '>&lt;</span>sup<span style='color:#d2cd86; '>></span>$<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>sup<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>p<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span>ul<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Shopping Area<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Spacious Rooms <span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Close to the Airport<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+						<span style='color:#d2cd86; '>&lt;</span>li<span style='color:#d2cd86; '>></span>Heart of the City<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>li<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>ul<span style='color:#d2cd86; '>></span>
+					<span style='color:#d2cd86; '>&lt;</span>a class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>btn btn-lg</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span>i class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>fa fa-user</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>i<span style='color:#d2cd86; '>></span> Sign Up<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>a<span style='color:#d2cd86; '>></span>
+				<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>		
+	<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>section<span style='color:#d2cd86; '>></span>
+</pre>
+	
+	<br/>
+	<h3>Contact</h3>
+          <p class="well note">
+              <span class="note">Open process.php file and replace the current e-mail address with your own:</span>
+          </p>
+		<pre style='color:#d1d1d1;background:#000000;'>$to <span style='color:#d2cd86; '>=</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>wowthemesnet@gmail.com</span><span style='color:#02d045; '>"</span><span style='color:#b060b0; '>;</span></pre>
+         <p class="well note">
+              <span class="note">In order to change the error messages, open js/validate.js at the bottom at the document and replace the preset messages with your own (around line 2492):</span>
+          </p>
+		  
+		  <pre style='color:#d1d1d1;background:#000000;'>
+<span style='color:#e34adc; '>messages:</span> <span style='color:#b060b0; '>{</span>
+<span style='color:#e34adc; '>&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;name:</span> <span style='color:#b060b0; '>{</span>
+<span style='color:#e34adc; '>&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;required:</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>Please, add your name.</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>,</span>
+<span style='color:#e34adc; '>&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;minlength:</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>Your name must consist of at least 2 characters</span><span style='color:#02d045; '>"</span>
+            <span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>,</span>
+<span style='color:#e34adc; '>&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;email:</span> <span style='color:#b060b0; '>{</span>
+<span style='color:#e34adc; '>&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;required:</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>Please, add your e-mail address.</span><span style='color:#02d045; '>"</span>
+            <span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>,</span>
+<span style='color:#e34adc; '>&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;message:</span> <span style='color:#b060b0; '>{</span>
+<span style='color:#e34adc; '>&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;required:</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>Please, add your message.</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>,</span>
+<span style='color:#e34adc; '>&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;minlength:</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>Your message is too short.</span><span style='color:#02d045; '>"</span>
+            <span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>,</span>
+<span style='color:#e34adc; '>&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;answer:</span> <span style='color:#b060b0; '>{</span>
+<span style='color:#e34adc; '>&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;required:</span> <span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>sorry, wrong answer!</span><span style='color:#02d045; '>"</span>
+            <span style='color:#b060b0; '>}</span>
+        <span style='color:#b060b0; '>}</span><span style='color:#d2cd86; '>,</span>
+</pre>
+
+<p class="well note"><span class="note">Basic Contact Form (do not change the id, name, method unless you know what you're doing):</span></p>
+<pre style='color:#d1d1d1;background:#000000;'>
+<span style='color:#d2cd86; '>&lt;</span>form id<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>contact</span><span style='color:#02d045; '>"</span> name<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>contact</span><span style='color:#02d045; '>"</span> method<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>post</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+<span style='color:#d2cd86; '>&lt;</span>fieldset<span style='color:#d2cd86; '>></span>
+
+	<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>row</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>col-md-4</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span>label <span style='color:#e66170; font-weight:bold; '>for</span><span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>name</span><span style='color:#02d045; '>"</span> id<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>name</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>Name<span style='color:#d2cd86; '>&lt;</span>span class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>required</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>*</span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>span<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>label<span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span>input type<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>text</span><span style='color:#02d045; '>"</span> name<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>name</span><span style='color:#02d045; '>"</span> id<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>name</span><span style='color:#02d045; '>"</span> size<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>30</span><span style='color:#02d045; '>"</span> value<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#02d045; '>"</span> required<span style='color:#d2cd86; '>/</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>col-md-4</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span>label <span style='color:#e66170; font-weight:bold; '>for</span><span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>email</span><span style='color:#02d045; '>"</span> id<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>email</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>Email<span style='color:#d2cd86; '>&lt;</span>span class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>required</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>*</span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>span<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>label<span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span>input type<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>text</span><span style='color:#02d045; '>"</span> name<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>email</span><span style='color:#02d045; '>"</span> id<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>email</span><span style='color:#02d045; '>"</span> size<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>30</span><span style='color:#02d045; '>"</span> value<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#02d045; '>"</span> required<span style='color:#d2cd86; '>/</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>col-md-4</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span>label <span style='color:#e66170; font-weight:bold; '>for</span><span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>phone</span><span style='color:#02d045; '>"</span> id<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>phone</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>Phone<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>label<span style='color:#d2cd86; '>></span>
+			<span style='color:#d2cd86; '>&lt;</span>input type<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>text</span><span style='color:#02d045; '>"</span> name<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>phone</span><span style='color:#02d045; '>"</span> id<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>phone</span><span style='color:#02d045; '>"</span> size<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>30</span><span style='color:#02d045; '>"</span> value<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>/</span><span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+	<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span><span style='color:#e66170; font-weight:bold; '>div</span><span style='color:#d2cd86; '>></span>
+	
+		<span style='color:#d2cd86; '>&lt;</span>label <span style='color:#e66170; font-weight:bold; '>for</span><span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>Message</span><span style='color:#02d045; '>"</span> id<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>message</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>Message<span style='color:#d2cd86; '>&lt;</span>span class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>required</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>*</span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>span<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>label<span style='color:#d2cd86; '>></span>
+		<span style='color:#d2cd86; '>&lt;</span>textarea name<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>message</span><span style='color:#02d045; '>"</span> id<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>message</span><span style='color:#02d045; '>"</span> required<span style='color:#d2cd86; '>></span><span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>textarea<span style='color:#d2cd86; '>></span>
+	
+	
+		<span style='color:#d2cd86; '>&lt;</span>input id<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>submit</span><span style='color:#02d045; '>"</span> type<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>submit</span><span style='color:#02d045; '>"</span> name<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>submit</span><span style='color:#02d045; '>"</span> value<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>Send</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>/</span><span style='color:#d2cd86; '>></span>
+	
+<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>fieldset<span style='color:#d2cd86; '>></span>
+<span style='color:#d2cd86; '>&lt;</span><span style='color:#d2cd86; '>/</span>form<span style='color:#d2cd86; '>></span>
+</pre>
+
+<br/>
+	<h2>Skin Colors</h2>
+	<p class="well note"><span class="note">
+	Open index.html file and replace the css style for the skin color you wish (available skins can all be found in css folder). Example:</span>
+	</p>
+	
+	<pre style='color:#d1d1d1;background:#000000;'>
+<span style='color:#d2cd86; '>&lt;</span>link href<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>css/skin-yellow.css</span><span style='color:#02d045; '>"</span> rel<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>stylesheet</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+</pre>
+
+<p class="well">
+<span class="note">
+replace it with:
+</span>
+</p>
+
+	<pre style='color:#d1d1d1;background:#000000;'>
+<span style='color:#d2cd86; '>&lt;</span>link href<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>css/skin-orange.css</span><span style='color:#02d045; '>"</span> rel<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>stylesheet</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+</pre>
+
+<br/>
+<h2>Icons</h2>
+<p class="well note"><span class="note">You can find a full list of available icons supported by this theme <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">here</a>.
+</p>
+
+<br/>
+	<h2>Animations</h2>
+	<p class="well note"><span class="note">The CSS animation allows you to create the following preset animations:</span>
+		 <ul>
+<li>bounce</li>
+<li>bounce In</li>
+<li>bounce In Up</li>
+<li>bounce In Down</li>
+<li>bounce In Left</li>
+<li>bounce In Right</li>
+<li>bounce Out</li>
+<li>bounce Out Up</li>
+<li>bounce Out Down</li>
+<li>bounce Out Left</li>
+<li>bounce Out Right</li>
+<li>fade In</li>
+<li>fade In Up</li>
+<li>fade In Down</li>
+<li>fade In Left</li>
+<li>fade In Right</li>
+<li>fade In Up Big</li>
+<li>fade In Down Big</li>
+<li>fade In Left Big</li>
+<li>fade In Right Big</li>
+<li>fade Out</li>
+<li>fade Out Up</li>
+<li>fade Out Down</li>
+<li>fade Out Left</li>
+<li>fade Out Right</li>
+<li>fade Out Up Big</li>
+<li>fade Out Down Big</li>
+<li>fade Out Left Big</li>
+<li>fade Out Right Big</li>
+<li>flash</li>
+<li>flip</li>
+<li>flip In X</li>
+<li>flip Out X</li>
+<li>flip In Y</li>
+<li>flip Out Y</li>
+<li>hinge</li>
+<li>light Speed In</li>
+<li>light Speed Out</li>
+<li>pulse</li>
+<li>rotate In</li>
+<li>rotate In Up Left</li>
+<li>rotate In Down Left</li>
+<li>rotate In Up Right</li>
+<li>rotate In Down Right</li>
+<li>rotate Out</li>
+<li>rotate Out Up Left</li>
+<li>rotate Out Down Left</li>
+<li>rotate Out Up Right</li>
+<li>rotate Out Down Right</li>
+<li>roll In</li>
+<li>roll Out</li>
+<li>shake</li>
+<li>swing</li>
+<li>tada</li>
+<li>wiggle</li>
+<li>wobble</li>
+</ul>
+</p>
+<p class="well">
+<span class="note">To any div element you can add an animation. In the following example, the class <code>bounceIn animated</code> is added to the div class <code>col-md-4</code>:</span>
+</p>
+<pre style='color:#d1d1d1;background:#000000;'>
+<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>col-md-4 bounceIn animated</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+</pre>
+
+
+<p class="well"><span class="note">TIP: Add the CSS class <code>.wow</code>; the element will be invisible until the user scrolls to reveal it. Example:</span></p>
+<pre style='color:#d1d1d1;background:#000000;'>
+<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>col-md-4 wow bounceIn animated</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+</pre>	
+
+<p class="well"><span class="note">Advanced Options</span></p>
+<pre style='color:#d1d1d1;background:#000000;'>
+data<span style='color:#d2cd86; '>-</span>wow<span style='color:#d2cd86; '>-</span>duration<span style='color:#b060b0; '>:</span> Change the animation duration
+data<span style='color:#d2cd86; '>-</span>wow<span style='color:#d2cd86; '>-</span>delay<span style='color:#b060b0; '>:</span> Delay before the animation starts
+data<span style='color:#d2cd86; '>-</span>wow<span style='color:#d2cd86; '>-</span>offset<span style='color:#b060b0; '>:</span> Distance to start the animation <span style='color:#d2cd86; '>(</span>related to the browser bottom<span style='color:#d2cd86; '>)</span>
+data<span style='color:#d2cd86; '>-</span>wow<span style='color:#d2cd86; '>-</span>iteration<span style='color:#b060b0; '>:</span> Number of times the animation is repeated
+</pre>	
+
+<p class="well"><span class="note">Example</span></p>
+<pre style='color:#d1d1d1;background:#000000;'>
+<span style='color:#d2cd86; '>&lt;</span><span style='color:#e66170; font-weight:bold; '>div</span> class<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>col-md-4 wow bounceIn animated</span><span style='color:#02d045; '>"</span> data<span style='color:#d2cd86; '>-</span>wow<span style='color:#d2cd86; '>-</span>duration<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>2s</span><span style='color:#02d045; '>"</span> data<span style='color:#d2cd86; '>-</span>wow<span style='color:#d2cd86; '>-</span>delay<span style='color:#d2cd86; '>=</span><span style='color:#02d045; '>"</span><span style='color:#00c4c4; '>5s</span><span style='color:#02d045; '>"</span><span style='color:#d2cd86; '>></span>
+</pre>
+         
+          <br>
+          <h2>Credits</h2>
+          
+          <p class="well">
+              <span class="note">
+                 Bootstrap: http://getbootstrap.com<br/>
+				 Nicescroll: http://areaaperta.com/nicescroll/<br/>
+				 Easing: http://gsgd.co.uk/sandbox/jquery/easing/<br/>
+				 Flexslider: http://www.woothemes.com/flexslider/<br/>
+				 Validate: http://jqueryvalidation.org/
+              </span>
+          </p>
+          <br>
+         
+		<h2>Copyright</h2>
+        <p class="well">
+            <span class="note">Template created by<a href="http://www.wowthemes.net/premium-themes-templates/"> © WowThemes.net</a>. You may remove the copyright area from the bottom of the template and replace it with your own.</span>
+        </p>
+      </div>
+      </div><!--/row-->
+          
+    </div><!--/.fluid-container-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/rainbow/rainbow.min.js"></script>
+    <script src="js/rainbow/language/generic.js"></script>
+    <script src="js/rainbow/language/html.js"></script>
+    <script src="js/rainbow/language/css.js"></script>
+    <script src="js/rainbow/language/javascript.js"></script>
+    <script src="js/rainbowlines/rainbow.linenumbers.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.tocify.min.js"></script>
+    <script src="js/prettify.js"></script>
+
+    <script>
+        $(function() {
+
+          $("#toc").tocify({ selectors: "h2, h3, h4", scrollTo: 60, highlightOffset: 60, extendPage: true });
+
+          prettyPrint();
+
+          $(".optionName").popover({ trigger: "hover", container: "body" });
+
+          $("a[href='#']").click(function(event) {
+
+              event.preventDefault();
+
+          });
+
+          Rainbow.color();
+        });
+    </script>
+  
+</div></body></html>

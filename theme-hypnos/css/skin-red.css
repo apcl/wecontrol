@@ -1,0 +1,13 @@
+.boxservice i, .highlight, .navbar-nav>li>a:hover 
+{color:#f67d42;}
+
+#portfolio .portfolio-item .portfolio-link .caption{background-color:#f67d42;}
+
+@media (min-width:768px) {
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-nav li a.active,.navbar-inverse .navbar-nav>li>a:hover,.navbar-inverse .navbar-nav>li>a:focus {background-color:#f67d42;}
+}
+
+::selection, ::-moz-selection {background-color:#f67d42; color:#fff;}
+.maincolorbg {background-color:#f67d42; color:#fff;}
+.maincolorbg .smallsep {background-color:#fff;}
